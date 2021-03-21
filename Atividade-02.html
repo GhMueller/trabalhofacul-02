@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        html {
+            zoom: 180%;
+            background: url("https://wallpaperaccess.com/full/2099806.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .formulario {
+            border: solid 3px black;
+            margin: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: url("https://gmedia.playstation.com/is/image/SIEPDC/cyberpunk-texture-section-background-desktop-tablet-01-ps4-en-29may19?$native$") no-repeat center center fixed;
+            background-size: cover;
+            clip-path:
+                polygon(0% 20px,
+                    0px 0%,
+                    calc(100% - 50px) 0%,
+                    100% 50px,
+                    100% calc(100% - 0px),
+                    calc(100% - 20px) 100%,
+                    50px 100%,
+                    0 calc(100% - 50px));
+        }
+
+        .Campo,
+        textarea {
+
+            background-color: #ffd300;
+
+        }
+
+        label {
+            display: inline-block;
+
+            width: 94px;
+            text-align: right;
+        }
+
+        .Campo {
+            display: inline-block;
+
+        }
+
+        .Preencha {
+            display: inline-block;
+
+            width: 235px;
+            text-align: right;
+
+        }
+
+        .Teste {
+            margin-left: 98px;
+
+
+            background-color: #ffd300;
+            margin-top: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form class="formulario" method="post">
+        <p class="Preencha"> Preencha o formulario abaixo:</p>
+
+        <div class="field">
+            <label for="nome">Seu Nome:</label>
+            <input class="Campo" type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+
+        <div class="field">
+            <label for="telefone">Seu Telefone:</label>
+            <input class="Campo" type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone*">
+        </div>
+
+        <div class="field">
+            <label for="email">Seu E-Mail:</label>
+            <input class="Campo" type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>
+        <div class="field">
+            <label for="Cidade">Sua cidade:</label>
+            <input class="Campo" type="text" id="Cidade" name="Cidade" placeholder="Digite sua cidade*" required>
+        </div>
+
+
+        <input class="Teste" type="submit" name="acao" value="Enviar">
+        <div class="Square"></div>
+
+    </form>
+
+</body>
+
+</html>
